@@ -1,0 +1,31 @@
+body{
+   background-color: khaki;
+
+}
+
+h1{
+   font-style: italic; /* css "стили шрифта" (snipet fs) */
+   text-decoration: underline; /* css "декор шрифта" (snipet td) */
+}
+
+body div{ /* при обращении к тегу */
+   color: brown; /* css color name */
+   text-align: center; /* css text center (snipet TAC) */
+   font-weight: bold; /* css "жирность" (snipet fwb) */
+   font-size: 30px;
+
+}
+
+.title{ /* при обращении к классу */
+   color: #231f6b ; /* css color HEX code */
+
+}
+
+#sun{ /* при обращении к айди */
+   color: rgb(250, 2, 2); /* css color decimal code */
+   text-transform: uppercase; /* css "декор шрифта" (snipet tt) */
+}
+
+.work{
+   color: rgba(2, 250, 64, 0.3); /* css color decimal code with alpha canal */
+}
