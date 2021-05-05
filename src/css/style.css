@@ -29,3 +29,26 @@ body div{ /* при обращении к тегу */
 .work{
    color: rgba(2, 250, 64, 0.3); /* css color decimal code with alpha canal */
 }
+
+.square{
+   height: 60px;
+   width: 180px;
+   background-color: blue;
+   padding: 15px;
+   margin: 60px;
+
+   border-style: solid;
+   border-width: 10px;
+   border-color: white;
+
+   /* border: 3px solid black;   другой вариант написания*/
+}
+
+.inSquare{
+   height: 30px;
+   width: 140px;
+   background-color: wheat;
+   font-size: 6px;
+   padding: 1px;
+   border-style: solid;
+}
