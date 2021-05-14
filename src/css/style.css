@@ -1,3 +1,7 @@
+*{
+   box-sizing: border-box;
+}
+
 body{
    background-color: khaki;
 
@@ -31,8 +35,9 @@ body div{ /* при обращении к тегу */
 }
 
 .square{
-   height: 60px;
-   width: 180px;
+
+   height: 260px;
+   width: 380px;
    background-color: blue;
    padding: 15px;
    margin: 60px;
@@ -45,10 +50,36 @@ body div{ /* при обращении к тегу */
 }
 
 .inSquare{
-   height: 30px;
-   width: 140px;
+   height: 160px;
+   width: 240px;
    background-color: wheat;
-   font-size: 6px;
+   font-size: 16px;
    padding: 1px;
    border-style: solid;
+}
+
+.square2{
+
+   height: 260px;
+   width: 380px;
+   background-color: blue;
+   padding: 15px;
+   margin: 60px;
+
+   border-style: solid;
+   border-width: 10px;
+   border-color: white;
+
+   /* border: 3px solid black;   другой вариант написания*/
+}
+
+a{
+   padding: 20px;
+   margin: 20px; /* отступ появится только слева и справа,
+   и строчный элемент не реагирует на указание ширины */
+}
+
+img{
+   display: block; /* элемент становиться блочным */
+   margin: 0 auto; /* выровнить по горизонтали */
 }
