@@ -59,7 +59,7 @@ body div{ /* при обращении к тегу */
 }
 
 .square2{
-
+   display:inline-block;
    height: 260px;
    width: 380px;
    background-color: blue;
@@ -82,4 +82,25 @@ a{
 img{
    display: block; /* элемент становиться блочным */
    margin: 0 auto; /* выровнить по горизонтали */
+}
+
+nav{
+   /* position: static; восттавновить порядок как изночально */
+   /* position: relative; */ /* распологать как вздумается и двигать свойствами left, right, top. bottom */
+   /* position:absolute; выпадение из общего списка html разметки
+   и двигать свойствами left, right, top. bottom РАБОТАЕТ ЕСЛИ В РОДИТЕЛЕ УКАЗАНО
+   position: relative; */
+   /*  position: fixed; */ /* при скроллинге остается на ме5сте */
+   position: inherit; /* положение наследуется от родителя */
+}
+
+.example{
+   position: relative;
+}
+
+.red{
+   background-color:rgb(250, 2, 2);
+   position: absolute;
+   left: 30px;
+   z-index: -1; /* выравние по оси z */
 }
