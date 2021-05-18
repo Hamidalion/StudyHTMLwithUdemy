@@ -34,44 +34,11 @@ body div{ /* при обращении к тегу */
    color: rgba(2, 250, 64, 0.3); /* css color decimal code with alpha canal */
 }
 
-.square{
 
-   height: 260px;
-   width: 380px;
-   background-color: blue;
-   padding: 15px;
-   margin: 60px;
 
-   border-style: solid;
-   border-width: 10px;
-   border-color: white;
 
-   /* border: 3px solid black;   другой вариант написания*/
-}
 
-.inSquare{
-   height: 160px;
-   width: 240px;
-   background-color: wheat;
-   font-size: 16px;
-   padding: 1px;
-   border-style: solid;
-}
 
-.square2{
-   display:inline-block;
-   height: 260px;
-   width: 380px;
-   background-color: blue;
-   padding: 15px;
-   margin: 60px;
-
-   border-style: solid;
-   border-width: 10px;
-   border-color: white;
-
-   /* border: 3px solid black;   другой вариант написания*/
-}
 
 a{
    padding: 20px;
@@ -82,6 +49,7 @@ a{
 img{
    display: block; /* элемент становиться блочным */
    margin: 0 auto; /* выровнить по горизонтали */
+   float: left; /* обтекание картинки слева */
 }
 
 nav{
@@ -96,11 +64,45 @@ nav{
 
 .example{
    position: relative;
+   display: inline-block;
+   top: 20px;
+}
+
+.blue{
+   vertical-align: top; /* выравнивание по верху */
+   vertical-align: middle;
+   display:inline-block;
+   position: static;
+   left: 0px;
+
+   height: 260px;
+   width: 380px;
+   background-color: blue;
+   margin: 0px;
+   padding: 10px;
+   text-align: center;
+   border-style: solid;
+   border-width: 10px;
+   border-color: white;
+   /* border: 3px solid black;   другой вариант написания*/
+}
+
+.green{
+   background-color: green;
+   height: 100px;
+   /* border: 3px solid black;   другой вариант написания*/
 }
 
 .red{
    background-color:rgb(250, 2, 2);
-   position: absolute;
-   left: 30px;
+   height: 200px;
    z-index: -1; /* выравние по оси z */
+}
+
+.inSquare{
+   display: inline-block;
+   width: 200px;
+   background-color: wheat;
+   padding: 1px;
+   border-style: solid;
 }
