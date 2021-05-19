@@ -1,5 +1,10 @@
 *{
-   box-sizing: border-box;
+   box-sizing: border-box; /* Свойство box-sizing позволяет изменить этот алгоритм,
+   чтобы свойства width и height задавали размеры не контента, а размеры блока. */
+}
+
+html{
+   font-style: 30px;
 }
 
 body{
@@ -44,6 +49,8 @@ a{
    padding: 20px;
    margin: 20px; /* отступ появится только слева и справа,
    и строчный элемент не реагирует на указание ширины */
+   display: block;
+
 }
 
 img{
@@ -66,6 +73,7 @@ nav{
    position: relative;
    display: inline-block;
    top: 20px;
+   width: 100%;
 }
 
 .blue{
@@ -95,7 +103,11 @@ nav{
 
 .red{
    background-color:rgb(250, 2, 2);
-   height: 200px;
+   width: 50%; /* размер от родительского размера */
+   font-size: 30px;
+   /* height: 20em;  размер зависит от размера шрифта в этом же блоке*/
+   /* height: 20rem; высота в зависимости от размера шрифта корневого элемента */
+   height: 30vh; /* высота в зависимости от размера окна */
    z-index: -1; /* выравние по оси z */
 }
 
